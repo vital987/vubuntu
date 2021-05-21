@@ -1,0 +1,33 @@
+[begin] (#apps_9870)
+   [submenu] (Browsers) {}
+      [exec] (Firefox) {firefox}
+      [exec] (Brave) {brave-browser --no-sandbox|| brave-browser-stable --no-sandbox}
+   [end]
+   [submenu] (Shells) {}
+      [exec] (Terminal) {gnome-terminal}
+      [exec] (Terminator) {terminator}
+   [end]
+   [submenu] (Programming) {}
+      [exec] (VS Code) {code}
+   [end]
+   [submenu] (Text Editors) {}
+      [exec] (Gedit) {gedit}
+      [exec] (Vim) {gvim}
+      [exec] (Sublime) {subl}
+   [end]
+   [submenu] (Libre Office) {}
+      [exec] (Base Database) {libreoffice --base}
+      [exec] (Calc Spreadsheet) {libreoffice --calc}
+      [exec] (Draw Drawing) {libreoffice --draw}
+      [exec] (Impress Presentation) {libreoffice --impress}
+      [exec] (Math Formula) {libreoffice --math}
+      [exec] (Writer Document) {libreoffice --writer}
+   [end]
+   [submenu] (Utilities) {}
+      [exec] (File Manager) {pcmanfm}
+	  [exec] (TeamViewer) {teamviewer}
+      [exec] (Calculator) {gnome-calculator}
+      [exec] (System Monitor) {gnome-system-monitor}
+      [exec] (PeaZip) {peazip}
+   [end]
+[end]

@@ -1,0 +1,37 @@
+{
+    "name": "Ubuntu with NoVNC",
+    "description": "Ubuntu with Fluxbox, Firefox, VS Code & more.",
+    "repository": "https://github.com/apoorvvyavahare/vubuntu.git",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ubuntu_logoib.svg/240px-Ubuntu_logoib.svg.png",
+    "keywords": ["docker","ubuntu", "vscode", "novnc", "firefox", "brave", "fluxbox", "linux", "remote"],
+    "stack": "container",
+    "env": {
+      "VNC_PASS": {
+        "description": "VNC Server Password.",
+        "required" : true
+      },
+      "VNC_TITLE" : {
+        "description": "VNC Session Title",
+        "required" : true
+      } ,
+      "VNC_RESOLUTION" : {
+        "description": "VNC Server Resolution in WxH.",
+		"value" : "1280x720",
+        "required" : true
+      } ,
+      "DISPLAY" : {
+        "description": "Display Port",
+		"value" : ":0",
+        "required" : true
+      } ,
+      "NO_VNC PORT" : {
+        "description": "NoVNC HTTP/HTTPS Port.",
+		"value" : "$PORT",
+        "required" : true
+      } ,
+      "NGROK_TOKEN" : {
+        "description": "Ngrok Port Forwarder Token.",
+        "required" : false
+      }
+    } 
+  }
