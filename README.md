@@ -25,6 +25,21 @@
           |   NOVNC_PORT   |      NoVNC HTTP Port     |
           |   NGROK_TOKEN  | Ngrok Port Forward Token |
           ---------------------------------------------
+### **Installation :**
+ * Heroku Users :
+   * Fork this repo.
+   * Set values for environment variables in Dockerfile (before build), do not set $PORT variable.
+   * Connect your Heroku account to github via Heroku Dashboard.
+   * Search for **vubuntu** in github repo field, connect to it.
+   * Hit the **Deploy Now** Button.
+ * Non-Heroku Useers :
+   * Clone this repo.
+   * Set values for environment variables in Dockerfile.
+   * Build the image: 
+     * ```docker build --tag vubuntu:20.04 .```
+   * Create container from the image and run it in detached mode: 
+     * ```docker run --name vubuntu -d -p <HOST-PORT>:<VALUE OF $NOVNC_PORT> vubuntu:20.04```
+#### [ ! ] The whole project runs as a root user in a docker container!
 #### [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free Plan) due to low memory.
 ### **Desktop Environments :**
 #### * **MATE :**
