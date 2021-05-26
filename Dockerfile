@@ -35,6 +35,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	vim \
 	zip \
 	net-tools \
+	iputils-ping \
 	build-essential \
 	python3 \
 	python3-pip \
