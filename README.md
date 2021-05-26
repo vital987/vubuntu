@@ -39,8 +39,10 @@
      * ```docker build --tag vubuntu:20.04 .```
    * Create container from the image and run it in detached mode: 
      * ```docker run --name vubuntu -d -p <HOST-PORT>:<VALUE OF $NOVNC_PORT> vubuntu:20.04```
-#### [ ! ] The whole project runs as a root user in a docker container!
-#### [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free Plan) due to low memory.
+### **Warnings :**
+  * [ ! ] $VNC_TITLE value should be without spaces.
+  * [ ! ] The whole project runs as a root user in a docker container!
+  * [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free Plan) due to low memory.
 ### **Desktop Environments :**
 #### * **MATE :**
   * Comment line #69 from Dockerfile
