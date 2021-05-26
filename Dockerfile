@@ -34,6 +34,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	curl \
 	vim \
 	zip \
+	net-tools \
 	build-essential \
 	python3 \
 	python3-pip \
