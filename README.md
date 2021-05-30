@@ -22,7 +22,7 @@
           |    VNC_TITLE   |     VNC Session Title    |
           | VNC_RESOLUTION |   VNC Remote Resolution  |
           |     DISPLAY    |    Local Display Port    |
-          |   PORT         |      NoVNC HTTP Port     |
+          |      PORT      |      NoVNC HTTP Port     |
           |   NGROK_TOKEN  | Ngrok Port Forward Token |
           ---------------------------------------------
 ### **Installation :**
