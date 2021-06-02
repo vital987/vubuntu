@@ -4,9 +4,9 @@ LABEL Maintainer: "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 ARG DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
-	VNC_PASS="" \
-#VNC Server Title(w/ spaces)
-	VNC_TITLE="" \
+	VNC_PASS="samplepass" \
+#VNC Server Title(w/o spaces)
+	VNC_TITLE="Ubuntu_Desktop" \
 #VNC Resolution(720p is preferable)
 	VNC_RESOLUTION="1280x720" \
 #Local Display Server Port
@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 #NoVNC Port
 	NOVNC_PORT=$PORT \
 #Ngrok Token
-	NGROK_TOKEN="" \
+	NGROK_TOKEN="1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM" \
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
 	LC_ALL=C.UTF-8
@@ -71,6 +71,8 @@ RUN rm -rf /etc/apt/sources.list && \
 	gdebi-core \
 	nginx \
 	novnc \
+	openvpn \
+	ffmpeg \
 #Fluxbox
 	/app/fluxbox-heroku-mod.deb && \
 #MATE Desktop
@@ -113,5 +115,14 @@ RUN rm -rf /etc/apt/sources.list && \
 	rm -rf /tmp/teamviewer_amd64.deb && \
 #Ngrok
 	chmod +x /app/ngrok_install.sh && \
-	/app/ngrok_install.sh
+	/app/ngrok_install.sh && \
+#Telegram
+	wget https://updates.tdesktop.com/tlinux/tsetup.2.7.4.tar.xz -P /tmp && \
+	tar -xvf /tmp/tsetup.2.7.4.tar.xz -C /tmp && \
+	mv /tmp/Telegram/Telegram /usr/bin/telegram && \
+#PowerShell
+	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -P /tmp && \
+	apt install -y /tmp/packages-microsoft-prod.deb && \
+	apt update && \
+	apt-get install -y powershell
 CMD supervisord -c /app/supervisord.conf
