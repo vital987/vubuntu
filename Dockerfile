@@ -15,9 +15,11 @@ ENV DEBIAN_FRONTEND=noninteractive \
 	NOVNC_PORT=$PORT \
 #Ngrok Token (It's advisable to use your personal token, cause it may clash with other users & the service may get terminated)
 	NGROK_TOKEN="1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM" \
+#Locale
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
-	LC_ALL=C.UTF-8
+	LC_ALL=C.UTF-8 \
+	TZ="Asia/Kolkata"
 COPY . /app
 RUN rm -rf /etc/apt/sources.list && \
 #All Official Focal Repos
@@ -82,6 +84,9 @@ RUN rm -rf /etc/apt/sources.list && \
 #XFCE Desktop
 	#apt install -y \
 	#xubuntu-desktop && \
+#TimeZone
+	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
+	echo $TZ > /etc/timezone && \
 #VNC
 	x11vnc -storepasswd $VNC_PASS /etc/xpass && \
 #NoVNC
