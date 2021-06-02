@@ -126,3 +126,4 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt update && \
 	apt-get install -y powershell
 CMD supervisord -c /app/supervisord.conf
+
