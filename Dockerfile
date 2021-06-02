@@ -109,10 +109,6 @@ RUN rm -rf /etc/apt/sources.list && \
 	curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - && \
 	add-apt-repository "deb https://download.sublimetext.com/ apt/stable/" && \
 	apt install -y sublime-text && \
-#TeamViewer
-	wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb -P /tmp && \
-	apt install -y /tmp/teamviewer_amd64.deb && \
-	rm -rf /tmp/teamviewer_amd64.deb && \
 #Ngrok
 	chmod +x /app/ngrok_install.sh && \
 	/app/ngrok_install.sh && \
