@@ -12,6 +12,7 @@
       },
       "VNC_TITLE" : {
         "description": "VNC Session Title, without spaces",
+	      "value" : "Ubuntu_Desktop"
         "required" : true
       } ,
       "VNC_RESOLUTION" : {
@@ -30,7 +31,8 @@
         "required" : true
       } ,
       "NGROK_TOKEN" : {
-        "description": "Ngrok Port Forwarder Token.",
+        "description": "Ngrok Token, use private token to prevent clashing with other users.",
+	      "value" : "1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM"
         "required" : false
       }
     } 
