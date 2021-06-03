@@ -11,7 +11,7 @@
         "required" : true
       },
       "VNC_TITLE" : {
-        "description": "VNC Session Title",
+        "description": "VNC Session Title, without spaces",
         "required" : true
       } ,
       "VNC_RESOLUTION" : {
