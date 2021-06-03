@@ -18,7 +18,7 @@
   * **Office Suite :** 
     * [![LibreOffice](https://img.shields.io/static/v1?label=Libre%20Office&message=%20&color=brightgreen&logo=libreoffice&logoColor=brightgreen)]()
   * **Utilities :**
-    * [![File Manager](https://img.shields.io/static/v1?label=File%20Manager&message=%20&color=EFF700&logo=files&logoColor=EFF700)]() [![TeamViewer](https://img.shields.io/static/v1?label=TeamViewer&message=%20&color=1e90ff&logo=teamviewer&logoColor=1e90ff)]() [![Calculator](https://img.shields.io/static/v1?label=Calculator&message=%20&color=017A79&logo=craft-cms&logoColor=017A79)]() [![System Monitor](https://img.shields.io/static/v1?label=System%20Monitor&message=%20&color=111324&logo=campaign-monitor&logoColor=111324)]() [![PeaZip](https://img.shields.io/static/v1?label=PeaZip&message=%20&color=6300F7&logo=git-lfs&logoColor=6300F7)]()
+    * [![File Manager](https://img.shields.io/static/v1?label=File%20Manager&message=%20&color=EFF700&logo=files&logoColor=EFF700)]() [![TeamViewer](https://img.shields.io/static/v1?label=TeamViewer&message=%20&color=1e90ff&logo=teamviewer&logoColor=1e90ff)]() [![Calculator](https://img.shields.io/static/v1?label=Calculator&message=%20&color=017A79&logo=craft-cms&logoColor=017A79)]() [![System Monitor](https://img.shields.io/static/v1?label=System%20Monitor&message=%20&color=111324&logo=campaign-monitor&logoColor=111324)]() [![PeaZip](https://img.shields.io/static/v1?label=Ngrok&message=%20&color=1853DB&logo=ngrok&logoColor=1853DB)]() [![PeaZip](https://img.shields.io/static/v1?label=PeaZip&message=%20&color=6300F7&logo=git-lfs&logoColor=6300F7)]()
   * **Languages Installed :** 
     * [![C](https://img.shields.io/static/v1?label=C&message=%20&logo=c)]() [![C++](https://img.shields.io/static/v1?label=C%2b%2b&message=%20&logo=c%2b%2b&logoColor=1e90ff&color=1e90ff)]() [![C Sharp](https://img.shields.io/static/v1?label=C%23&message=%20&logo=c-sharp&logoColor=green&color=green)]() [![Clojure](https://img.shields.io/static/v1?label=Clojure&message=%20&logo=clojure&logoColor=brightgreen&color=brightgreen)]() [![Go](https://img.shields.io/static/v1?label=Go&message=%20&logo=go&logoColor=1e90ff&color=1e90ff)]() [![Java](https://img.shields.io/static/v1?label=Java&message=%20&logo=java&logoColor=f89820&color=f89820)]() [![Lua](https://img.shields.io/static/v1?label=Lua&message=%20&color=blueviolet&logo=lua&logoColor=9638E7)]() [![R](https://img.shields.io/static/v1?label=R&message=%20&logo=r&logoColor=blue&color=blue)]()  [![Ruby](https://img.shields.io/static/v1?label=Ruby&message=%20&logo=ruby&logoColor=9b111e&color=9b111e)]() [![Perl](https://img.shields.io/static/v1?label=Perl&message=%20&logo=perl&logoColor=cc99ff&color=cc99ff)]() [![Python](https://img.shields.io/static/v1?label=Python&message=%20&logo=python&color=blue)]()
 ## **Environment Variables :**
@@ -39,12 +39,18 @@
    * Search for **vubuntu** in github repo field, connect to it.
    * Hit the **Deploy Now** Button.
  * Non-Heroku Useers :
-   * Clone this repo.
-   * Set values for environment variables in Dockerfile.
-   * Build the image: 
-     * ```docker build --tag vubuntu:20.04 .```
-   * Create container from the image and run it in detached mode: 
-     * ```docker run --name vubuntu -d -p <HOST-PORT>:<VALUE OF $NOVNC_PORT> vubuntu:20.04```
+   * Run Command :
+     ```
+     docker run --name vubuntu \
+     -e VNC_PASS="samplepass" \
+     -e VNC_TITLE="Ubuntu_Desktop" \
+     -e VNC_RESOLUTION="1280x720" \
+     -e DISPLAY=:0 \
+     -e PORT=9870 \
+     -d -p 8080:9870 \
+     vital987/vubuntu
+     ```
+[ * ] Add your private ngrok token to ```NGROK_TOKEN``` to get proper Ngrok functionality.  
 ## **Warnings :**
   * [ ! ] $VNC_TITLE value should be without spaces.
   * [ ! ] The whole project runs as a root user in a docker container!
