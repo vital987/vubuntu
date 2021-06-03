@@ -32,7 +32,6 @@
       } ,
       "NGROK_TOKEN" : {
         "description": "Ngrok Token, use private token to prevent clashing with other users.",
-	      "value" : "1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM",
         "required" : false
       }
     } 
