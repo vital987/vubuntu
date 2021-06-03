@@ -17,14 +17,15 @@
   * **Languages Installed :** 
     * [![C](https://img.shields.io/static/v1?label=C&message=%20&logo=c)]() [![C++](https://img.shields.io/static/v1?label=C%2b%2b&message=%20&logo=c%2b%2b&logoColor=1e90ff&color=1e90ff)]() [![C Sharp](https://img.shields.io/static/v1?label=C%23&message=%20&logo=c-sharp&logoColor=green&color=green)]() [![Clojure](https://img.shields.io/static/v1?label=Clojure&message=%20&logo=clojure&logoColor=brightgreen&color=brightgreen)]() [![Go](https://img.shields.io/static/v1?label=Go&message=%20&logo=go&logoColor=1e90ff&color=1e90ff)]() [![Java](https://img.shields.io/static/v1?label=Java&message=%20&logo=java&logoColor=f89820&color=f89820)]() [![Lua](https://img.shields.io/static/v1?label=Lua&message=%20&color=blueviolet&logo=lua&logoColor=9638E7)]() [![R](https://img.shields.io/static/v1?label=R&message=%20&logo=r&logoColor=blue&color=blue)]()  [![Ruby](https://img.shields.io/static/v1?label=Ruby&message=%20&logo=ruby&logoColor=9b111e&color=9b111e)]() [![Perl](https://img.shields.io/static/v1?label=Perl&message=%20&logo=perl&logoColor=cc99ff&color=cc99ff)]() [![Python](https://img.shields.io/static/v1?label=Python&message=%20&logo=python&color=blue)]()
 ### **Environment Variables :**
-          ---------------------------------------------
-          |    VNC_PASS    |    VNC Server Password   |
-          |    VNC_TITLE   |     VNC Session Title    |
-          | VNC_RESOLUTION |   VNC Remote Resolution  |
-          |     DISPLAY    |    Local Display Port    |
-          |      PORT      |      NoVNC HTTP Port     |
-          |   NGROK_TOKEN  | Ngrok Port Forward Token |
-          ---------------------------------------------
+
+| VNC_PASS | VNC Server Password |
+|:-:|:-:|
+| VNC_TITLE | VNC Session Title |
+| VNC_RESOLUTION | VNC Server Resolution |
+| DISPLAY | Display Server Port |
+| PORT | NoVNC HTTP Port |
+| NGROK_TOKEN | Ngrok Token |
+
 ### **Installation :**
  * Heroku Users :
    * Fork this repo.
