@@ -10,16 +10,18 @@
   * **Browsers :** 
     * [![Firefox](https://img.shields.io/static/v1?label=Firefox&message=%20&color=orange&logo=firefox-browser)]() [![Brave](https://img.shields.io/static/v1?label=Brave&message=%20&color=fa552a&logo=brave)]()
   * **Shells :**
-    * [![Gnome Terminal](https://img.shields.io/static/v1?label=GnomeTerminal&message=%20&color=green&logo=gnome&logoColor=green)]() [![Terminator](https://img.shields.io/static/v1?label=Terminator&message=%20&color=red&logo=powershell&logoColor=red)]()
+    * [![Gnome Terminal](https://img.shields.io/static/v1?label=GnomeTerminal&message=%20&color=green&logo=gnome&logoColor=green)]() [![Terminator](https://img.shields.io/static/v1?label=Terminator&message=%20&color=red&logo=powershell&logoColor=red)]() [![PowerShell](https://img.shields.io/static/v1?label=PowerShell&message=%20&color=5391FE&logo=powershell&logoColor=5391FE)]()
   * **Coding :** 
     * [![VS Code](https://img.shields.io/static/v1?label=VS%20Code&message=%20&color=1e90ff&logo=visual-studio-code&logoColor=1e90ff)]()
   * **Text Editors :** 
     * [![G-Vim](https://img.shields.io/static/v1?label=G-Vim&message=%20&color=brightgreen&logo=vim&logoColor=brightgreen)]() [![G-Edit](https://img.shields.io/static/v1?label=G-Edit&message=%20&color=green&logo=textpattern&logoColor=green)]() [![Sublime](https://img.shields.io/static/v1?label=Sublime%20Text&message=%20&color=orange&logo=sublime-text&logoColor=orange)]()
   * **Office Suite :** 
     * [![LibreOffice](https://img.shields.io/static/v1?label=Libre%20Office&message=%20&color=brightgreen&logo=libreoffice&logoColor=brightgreen)]()
-  * **Utilities :**
+  * **Social Apps :** 
+    * [![Telegram](https://img.shields.io/static/v1?label=Telegram&message=%20&color=26A5E4&logo=telegram&logoColor=26A5E4)]()
+* **Utilities :**
     * [![File Manager](https://img.shields.io/static/v1?label=File%20Manager&message=%20&color=EFF700&logo=files&logoColor=EFF700)]() [![TeamViewer](https://img.shields.io/static/v1?label=TeamViewer&message=%20&color=1e90ff&logo=teamviewer&logoColor=1e90ff)]() [![Calculator](https://img.shields.io/static/v1?label=Calculator&message=%20&color=017A79&logo=craft-cms&logoColor=017A79)]() [![System Monitor](https://img.shields.io/static/v1?label=System%20Monitor&message=%20&color=111324&logo=campaign-monitor&logoColor=111324)]() [![PeaZip](https://img.shields.io/static/v1?label=Ngrok&message=%20&color=1853DB&logo=ngrok&logoColor=1853DB)]() [![PeaZip](https://img.shields.io/static/v1?label=PeaZip&message=%20&color=6300F7&logo=git-lfs&logoColor=6300F7)]()
-  * **Languages Installed :** 
+* **Languages Installed :** 
     * [![C](https://img.shields.io/static/v1?label=C&message=%20&logo=c)]() [![C++](https://img.shields.io/static/v1?label=C%2b%2b&message=%20&logo=c%2b%2b&logoColor=1e90ff&color=1e90ff)]() [![C Sharp](https://img.shields.io/static/v1?label=C%23&message=%20&logo=c-sharp&logoColor=green&color=green)]() [![Clojure](https://img.shields.io/static/v1?label=Clojure&message=%20&logo=clojure&logoColor=brightgreen&color=brightgreen)]() [![Go](https://img.shields.io/static/v1?label=Go&message=%20&logo=go&logoColor=1e90ff&color=1e90ff)]() [![Java](https://img.shields.io/static/v1?label=Java&message=%20&logo=java&logoColor=f89820&color=f89820)]() [![Lua](https://img.shields.io/static/v1?label=Lua&message=%20&color=blueviolet&logo=lua&logoColor=9638E7)]() [![R](https://img.shields.io/static/v1?label=R&message=%20&logo=r&logoColor=blue&color=blue)]()  [![Ruby](https://img.shields.io/static/v1?label=Ruby&message=%20&logo=ruby&logoColor=9b111e&color=9b111e)]() [![Perl](https://img.shields.io/static/v1?label=Perl&message=%20&logo=perl&logoColor=cc99ff&color=cc99ff)]() [![Python](https://img.shields.io/static/v1?label=Python&message=%20&logo=python&color=blue)]()
 ## **Environment Variables :**
 
@@ -39,7 +41,7 @@
    * Search for **vubuntu** in github repo field, connect to it.
    * Hit the **Deploy Now** Button.
  * Non-Heroku Useers :
-   * Run Command :
+   * Edit & Run Command :
      ```
      docker run --name vubuntu \
      -e VNC_PASS="samplepass" \
