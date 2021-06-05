@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-LABEL About "Ubuntu20.04_Fluxbox_NoVNC"
+LABEL AboutImage "Ubuntu20.04_Fluxbox_NoVNC"
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 ARG DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND=noninteractive \
