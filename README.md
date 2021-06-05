@@ -55,7 +55,7 @@
 [ * ] Add your private ngrok token to ```NGROK_TOKEN``` to get proper Ngrok functionality.  
 ## **Warnings :**
   * [ ! ] $VNC_TITLE value should be without spaces.
-  * [ ! ] The whole project runs as a root user in a docker container!
+  * [ ! ] The whole project runs as a root user in a docker container.
   * [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free Plan) due to low memory.
 ## **Desktop Environments :**
 ### * **MATE :**
