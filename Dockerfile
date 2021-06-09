@@ -126,4 +126,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
 	apt update && \
 	apt-get install -y powershell
-CMD supervisord -c /app/supervisord.conf
+
+ENTRYPOINT ["supervisord"]
+
+CMD ["-c /app/supervisord.conf"]
