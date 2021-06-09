@@ -40,6 +40,7 @@
    * Connect your Heroku account to github via Heroku Dashboard.
    * Search for **vubuntu** in github repo field, connect to it.
    * Hit the **Deploy Now** Button.
+   * [ ! ] **Do not deploy it with app.json template, it messes with vnc password system.**
  * Non-Heroku Useers :
    * Edit & Run Command :
      ```
