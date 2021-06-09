@@ -127,6 +127,6 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt update && \
 	apt-get install -y powershell
 
-ENTRYPOINT ["supervisord"]
+ENTRYPOINT ["supervisord", "-c"]
 
-CMD ["-c /app/supervisord.conf"]
+CMD ["/app/supervisord.conf"]
