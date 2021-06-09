@@ -36,7 +36,7 @@
 ## **Installation :**
  * Heroku Users :
    * Fork this repo.
-   * Set values for environment variables in Dockerfile (before build), do not set $PORT variable.
+   * **Edit** ```VNC_PASS``` **variable in Dockerfile.**
    * Connect your Heroku account to github via Heroku Dashboard.
    * Search for **vubuntu** in github repo field, connect to it.
    * Hit the **Deploy Now** Button.
