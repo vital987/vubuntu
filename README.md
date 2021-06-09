@@ -64,7 +64,6 @@
   * Uncomment line #71, #72, #73 from Dockerfile
   * Delete file ***conf.d/4-fluxbox.conf***
   * Copy the file ***extras/4-mate.conf*** to ***conf.d/***
-        
 ### * **XFCE :**
   * Comment line #69 from Dockerfile
   * Uncomment line #75, #76 from Dockerfile
