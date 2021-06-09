@@ -6,12 +6,12 @@
     "keywords": ["docker","ubuntu", "vscode", "novnc", "firefox", "brave", "fluxbox", "linux", "remote"],
     "stack": "container",
     "env": {
-      "VNC_PASS": {
-        "description": "VNC Server Password.",
+      "PASSWORD": {
+        "description": "VNC Server Password, w/o spaces",
         "required" : true
       },
       "VNC_TITLE" : {
-        "description": "VNC Session Title, without spaces",
+        "description": "VNC Session Title, w/o spaces",
 	      "value" : "Ubuntu_Desktop",
         "required" : true
       } ,
