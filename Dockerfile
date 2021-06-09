@@ -3,8 +3,8 @@ LABEL AboutImage "Ubuntu20.04_Fluxbox_NoVNC"
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 ARG DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND=noninteractive \
-#VNC Server Password
-	VNC_PASS="samplepass" \
+#VNC Server Password(Commented for heroku users)
+	#VNC_PASS="samplepass" \
 #VNC Server Title(w/o spaces)
 	VNC_TITLE="Ubuntu_Desktop" \
 #VNC Resolution(720p is preferable)
