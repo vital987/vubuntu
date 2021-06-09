@@ -3,10 +3,8 @@ LABEL AboutImage "Ubuntu20.04_Fluxbox_NoVNC"
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 ARG DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND=noninteractive \
-#VNC Server Password(Comment if heroku user)
-	#VNC_PASS="sample" \
-#VNC Server Password(Comment if non-heroku user)
-	VNC_PASS=$PASSWORD \
+#VNC Server Password
+	VNC_PASS="samplepass" \
 #VNC Server Title(w/o spaces)
 	VNC_TITLE="Ubuntu_Desktop" \
 #VNC Resolution(720p is preferable)
@@ -15,7 +13,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 	DISPLAY=:0 \
 #NoVNC Port
 	NOVNC_PORT=$PORT \
-#Ngrok Token (It's advisable to use your personal token, cause it may clash with other users & the service may get terminated)
+#Ngrok Token (It's advisable to use your personal token, else it may clash with other users & your tunnel may get terminated)
 	NGROK_TOKEN="1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM" \
 #Locale
 	LANG=en_US.UTF-8 \
