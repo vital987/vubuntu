@@ -8,6 +8,7 @@
     "env": {
       "PASSWORD": {
         "description": "Please set the password in your Dockerfile from GitHub.",
+        "value" : "CHANGE_IT_IN_DOCKERFILE"
       },
       "VNC_TITLE" : {
         "description": "VNC Session Title, w/o spaces",
