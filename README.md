@@ -1,5 +1,5 @@
 # **Ubuntu Fluxbox with NoVNC**
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)
 ## **Table of Contents :**
   * [**Packages**](#packages-)
   * [**Environment Variables**](#environment-variables-)
@@ -58,13 +58,14 @@
   * [ ! ] $VNC_TITLE value should be without spaces.
   * [ ! ] The whole project runs as a root user in a docker container.
   * [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free Plan) due to low memory.
+
 ## **Desktop Environments :**
-### * **MATE :**
+* **MATE :**
   * Comment line #69 from Dockerfile
   * Uncomment line #71, #72, #73 from Dockerfile
   * Delete file ***conf.d/4-fluxbox.conf***
   * Copy the file ***extras/4-mate.conf*** to ***conf.d/***
-### * **XFCE :**
+* **XFCE :**
   * Comment line #69 from Dockerfile
   * Uncomment line #75, #76 from Dockerfile
   * Delete file ***conf.d/4-fluxbox.conf***
