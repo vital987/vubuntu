@@ -1,7 +1,8 @@
 # **Ubuntu Fluxbox with NoVNC**
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br><a href="https://heroku.com/deploy?template=https://github.com/vital987/vubuntu" target="_blank"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 ## **Table of Contents :**
   * [**Packages**](#packages-)
+  * [**Screenshots**](#screenshots-)
   * [**Environment Variables**](#environment-variables-)
   * [**Installation**](#installation-)
   * [**Warnings**](#warnings-)
@@ -23,6 +24,25 @@
     * [![File Manager](https://img.shields.io/static/v1?label=File%20Manager&message=%20&color=EFF700&logo=files&logoColor=EFF700)]() [![TeamViewer](https://img.shields.io/static/v1?label=TeamViewer&message=%20&color=1e90ff&logo=teamviewer&logoColor=1e90ff)]() [![Calculator](https://img.shields.io/static/v1?label=Calculator&message=%20&color=017A79&logo=craft-cms&logoColor=017A79)]() [![System Monitor](https://img.shields.io/static/v1?label=System%20Monitor&message=%20&color=111324&logo=campaign-monitor&logoColor=111324)]() [![PeaZip](https://img.shields.io/static/v1?label=Ngrok&message=%20&color=1853DB&logo=ngrok&logoColor=1853DB)]() [![PeaZip](https://img.shields.io/static/v1?label=PeaZip&message=%20&color=6300F7&logo=git-lfs&logoColor=6300F7)]()
 * **Languages Installed :** 
     * [![C](https://img.shields.io/static/v1?label=C&message=%20&logo=c)]() [![C++](https://img.shields.io/static/v1?label=C%2b%2b&message=%20&logo=c%2b%2b&logoColor=1e90ff&color=1e90ff)]() [![C Sharp](https://img.shields.io/static/v1?label=C%23&message=%20&logo=c-sharp&logoColor=green&color=green)]() [![Clojure](https://img.shields.io/static/v1?label=Clojure&message=%20&logo=clojure&logoColor=brightgreen&color=brightgreen)]() [![Go](https://img.shields.io/static/v1?label=Go&message=%20&logo=go&logoColor=1e90ff&color=1e90ff)]() [![Java](https://img.shields.io/static/v1?label=Java&message=%20&logo=java&logoColor=f89820&color=f89820)]() [![Lua](https://img.shields.io/static/v1?label=Lua&message=%20&color=blueviolet&logo=lua&logoColor=9638E7)]() [![R](https://img.shields.io/static/v1?label=R&message=%20&logo=r&logoColor=blue&color=blue)]()  [![Ruby](https://img.shields.io/static/v1?label=Ruby&message=%20&logo=ruby&logoColor=9b111e&color=9b111e)]() [![Perl](https://img.shields.io/static/v1?label=Perl&message=%20&logo=perl&logoColor=cc99ff&color=cc99ff)]() [![Python](https://img.shields.io/static/v1?label=Python&message=%20&logo=python&color=blue)]()
+
+## **Screenshots :**
+<div>
+  <details>
+  <summary>Laptop/Desktop</summary>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss1.png" align="center"><br><br>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss2.png" align="center"><br><br>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss3.png" align="center"><br><br>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss4.png" align="center">
+ </details>
+ <details>
+  <summary>Smartphone/Tablet</summary>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss1.png" align="center"><br><br>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss2.png" align="center"><br><br>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss3.png" align="center"><br><br>
+  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss4.png" align="center">
+ </details>
+</div>
+  
 ## **Environment Variables :**
 
 | VNC_PASS | VNC Server Password |
@@ -35,12 +55,9 @@
 
 ## **Installation :**
  * Heroku Users :
-   * Fork this repo.
-   * **Edit** ```VNC_PASS``` **variable in Dockerfile.**
-   * Connect your Heroku account to github via Heroku Dashboard.
-   * Search for **vubuntu** in github repo field, connect to it.
-   * Hit the **Deploy Now** Button.
-   * [ ! ] **Do not deploy it with app.json template, it messes with vnc password system.**
+   * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu) button.
+   * Set app name & variables.
+   * Deploy.
  * Non-Heroku Useers :
    * Edit & Run Command :
      ```
@@ -56,8 +73,9 @@
 [ * ] Add your private ngrok token to ```NGROK_TOKEN``` to get proper Ngrok functionality.  
 ## **Warnings :**
   * [ ! ] $VNC_TITLE value should be without spaces.
+  * [ ! ] $VNC_PASS value should be without spaces.
   * [ ! ] The whole project runs as a root user in a docker container.
-  * [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free Plan) due to low memory.
+  * [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free plan) due to low memory.
 
 ## **Desktop Environments :**
 * **MATE :**
@@ -70,4 +88,3 @@
   * Uncomment line #75, #76 from Dockerfile
   * Delete file ***conf.d/4-fluxbox.conf***
   * Copy the file ***extras/4-xfce.conf*** to ***conf.d/***
-        
