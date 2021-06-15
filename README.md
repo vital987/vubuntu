@@ -29,17 +29,17 @@
 <div>
   <details open>
   <summary>Laptop/Desktop</summary>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss1.png" align="center"><br><br>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss2.png" align="center"><br><br>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss3.png" align="center"><br><br>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss4.png" align="center">
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss1.png" align="center" width=900 height=500><br><br>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss2.png" align="center" width=900 height=500><br><br>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss3.png" align="center" width=900 height=500><br><br>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss4.png" align="center" width=900 height=500>
  </details>
  <details>
   <summary>Smartphone/Tablet</summary>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss1.png" align="center"><br><br>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss2.png" align="center"><br><br>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss3.png" align="center"><br><br>
-  <img src="https://github.com/vital987/vubuntu/blob/master/assets/phone_ss4.png" align="center">
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss1.png" align="center" width=900 height=500><br><br>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss2.png" align="center" width=900 height=500><br><br>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss3.png" align="center" width=900 height=500><br><br>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss4.png" align="center" width=900 height=500>
  </details>
 </div>
   
