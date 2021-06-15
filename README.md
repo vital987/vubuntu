@@ -27,7 +27,7 @@
 
 ## **Screenshots :**
 <div>
-  <details>
+  <details open>
   <summary>Laptop/Desktop</summary>
   <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss1.png" align="center"><br><br>
   <img src="https://github.com/vital987/vubuntu/blob/master/assets/desktop_ss2.png" align="center"><br><br>
