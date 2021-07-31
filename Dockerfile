@@ -6,15 +6,13 @@ ENV DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
 	VNC_PASS="samplepass" \
 #VNC Server Title(w/o spaces)
-	VNC_TITLE="Ubuntu_Desktop" \
+	VNC_TITLE="Vubuntu_Desktop" \
 #VNC Resolution(720p is preferable)
 	VNC_RESOLUTION="1280x720" \
 #Local Display Server Port
 	DISPLAY=:0 \
 #NoVNC Port
 	NOVNC_PORT=$PORT \
-#Ngrok Token (It's advisable to use your personal token, else it may clash with other users & your tunnel may get terminated)
-	NGROK_TOKEN="1tNm3GUFYV1A4lQFXF1bjFvnCvM_4DjiFRiXKGHDaTGBJH8VM" \
 #Locale
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
@@ -53,6 +51,8 @@ RUN rm -rf /etc/apt/sources.list && \
 	default-jdk \
 	clojure \
 	php \
+	nodejs \
+	npm \
 	firefox \
 	gnome-terminal \
 	gnome-calculator \
@@ -62,9 +62,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	mousepad \
 	libreoffice \
 	pcmanfm \
-	snapd \
 	terminator \
-	websockify \
 	supervisor \
 	x11vnc \
 	xvfb \
@@ -77,6 +75,8 @@ RUN rm -rf /etc/apt/sources.list && \
 	ffmpeg \
 #Fluxbox
 	/app/fluxbox-heroku-mod.deb && \
+#Websockify
+	npm i websockify && \
 #MATE Desktop
 	#apt install -y \ 
 	#ubuntu-mate-core \
@@ -112,9 +112,6 @@ RUN rm -rf /etc/apt/sources.list && \
 	curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - && \
 	add-apt-repository "deb https://download.sublimetext.com/ apt/stable/" && \
 	apt install -y sublime-text && \
-#Ngrok
-	chmod +x /app/ngrok_install.sh && \
-	/app/ngrok_install.sh && \
 #Telegram
 	wget https://updates.tdesktop.com/tlinux/tsetup.2.7.4.tar.xz -P /tmp && \
 	tar -xvf /tmp/tsetup.2.7.4.tar.xz -C /tmp && \
