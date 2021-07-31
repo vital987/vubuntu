@@ -20,6 +20,4 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build & Push the Docker image
-      run: |
-           docker build . --file Dockerfile --tag vubuntu:latest
-           docker push vubuntu:latest
+      run: docker build . --tag vubuntu:latest && docker push vubuntu:latest
