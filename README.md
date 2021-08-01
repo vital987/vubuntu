@@ -1,5 +1,5 @@
 # **Ubuntu Fluxbox with NoVNC**
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br><a href="https://heroku.com/deploy?template=https://github.com/vital987/vubuntu" target="_blank"><img src="https://www.herokucdn.com/deploy/button.svg"></a><br>[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fvital987%2Fvubuntu&envs=VNC_PASS%2CVNC_TITLE%2CVNC_RESOLUTION%2CNOVNC_PORT%2CPORT&VNC_PASSDesc=Password+for+VNC+server&VNC_TITLEDesc=VNC+session+title%28strictly+w%2Fo+spaces%29&VNC_RESOLUTIONDesc=VNC+server+resolution&NOVNC_PORTDesc=Don%27t+change+it%21&PORTDesc=Don%27t+change+it%21&VNC_PASSDefault=samplepass&VNC_RESOLUTIONDefault=1280x720&NOVNC_PORTDefault=5900&PORTDefault=80)
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fvital987%2Fvubuntu&envs=VNC_TITLE%2CVNC_PASS%2CVNC_RESOLUTION%2CTZ&VNC_TITLEDesc=%F0%9F%92%BB+VNC+session+title%28strictly+w%2Fo+spaces%29&VNC_PASSDesc=%F0%9F%94%91+VNC+server+password&VNC_RESOLUTIONDesc=%F0%9F%96%A5%EF%B8%8F+VNC+server+resolution&TZDesc=%F0%9F%8C%8E+TimeZone&VNC_TITLEDefault=Vubuntu&VNC_PASSDefault=samplepass&VNC_RESOLUTIONDefault=1280x720&TZDefault=Asia%2FKolkata)
 ## **Table of Contents :**
   * [**Packages**](#packages-)
   * [**Screenshots**](#screenshots-)
@@ -15,7 +15,7 @@
   * **Coding :** 
     * [![VS Code](https://img.shields.io/static/v1?label=VS%20Code&message=%20&color=1e90ff&logo=visual-studio-code&logoColor=1e90ff)]()
   * **Text Editors :** 
-    * [![G-Vim](https://img.shields.io/static/v1?label=G-Vim&message=%20&color=brightgreen&logo=vim&logoColor=brightgreen)]() [![G-Edit](https://img.shields.io/static/v1?label=G-Edit&message=%20&color=green&logo=textpattern&logoColor=green)]() [![Sublime](https://img.shields.io/static/v1?label=Sublime%20Text&message=%20&color=orange&logo=sublime-text&logoColor=orange)]()
+    * [![G-Vim](https://img.shields.io/static/v1?label=G-Vim&message=%20&color=brightgreen&logo=vim&logoColor=brightgreen)]() [![Pluma](https://img.shields.io/static/v1?label=Pluma&message=%20&color=green&logo=textpattern&logoColor=green)]() [![Sublime](https://img.shields.io/static/v1?label=Sublime%20Text&message=%20&color=orange&logo=sublime-text&logoColor=orange)]()
   * **Office Suite :** 
     * [![LibreOffice](https://img.shields.io/static/v1?label=Libre%20Office&message=%20&color=brightgreen&logo=libreoffice&logoColor=brightgreen)]()
   * **Social Apps :** 
@@ -31,15 +31,11 @@
   <summary>Laptop/Desktop</summary>
   <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss1.png" align="center" width=900 height=500><br><br>
   <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss2.png" align="center" width=900 height=500><br><br>
-  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss3.png" align="center" width=900 height=500><br><br>
-  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/desktop_ss4.png" align="center" width=900 height=500>
  </details>
  <details>
   <summary>Smartphone/Tablet</summary>
-  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss1.png" align="center" width=900 height=500><br><br>
   <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss2.png" align="center" width=900 height=500><br><br>
   <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss3.png" align="center" width=900 height=500><br><br>
-  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/phone_ss4.png" align="center" width=900 height=500>
  </details>
 </div>
   

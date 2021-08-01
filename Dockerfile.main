@@ -1,7 +1,11 @@
 FROM ubuntu:20.04
+
 LABEL AboutImage "Ubuntu20.04_Fluxbox_NoVNC"
+
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
+
 ARG DEBIAN_FRONTEND=noninteractive
+
 ENV DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
 	VNC_PASS="samplepass" \
@@ -18,7 +22,9 @@ ENV DEBIAN_FRONTEND=noninteractive \
 	LANGUAGE=en_US.UTF-8 \
 	LC_ALL=C.UTF-8 \
 	TZ="Asia/Kolkata"
+
 COPY . /app
+
 RUN rm -rf /etc/apt/sources.list && \
 #All Official Focal Repos
 	bash -c 'echo -e "deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse\ndeb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse\ndeb http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse\ndeb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse\ndeb http://archive.canonical.com/ubuntu focal partner\ndeb-src http://archive.canonical.com/ubuntu focal partner" >/etc/apt/sources.list' && \
@@ -34,23 +40,24 @@ RUN rm -rf /etc/apt/sources.list && \
 	curl \
 	vim \
 	zip \
+	sudo \
 	net-tools \
 	iputils-ping \
 	build-essential \
-	python3 \
-	python3-pip \
-	python-is-python3 \
-	perl \
-	ruby \
-	golang \
-	lua5.3 \
-	scala \
-	mono-complete \
-	r-base \
-	default-jre \
-	default-jdk \
-	clojure \
-	php \
+	#python3 \
+	#python3-pip \
+	#python-is-python3 \
+	#perl \
+	#ruby \
+	#golang \
+	#lua5.3 \
+	#scala \
+	#mono-complete \
+	#r-base \
+	#default-jre \
+	#default-jdk \
+	#clojure \
+	#php \
 	nodejs \
 	npm \
 	firefox \
@@ -73,8 +80,9 @@ RUN rm -rf /etc/apt/sources.list && \
 	novnc \
 	openvpn \
 	ffmpeg \
+	pluma \
 #Fluxbox
-	/app/fluxbox-heroku-mod.deb && \
+	/app/fluxbox-mod.deb && \
 #Websockify
 	npm i websockify && \
 #MATE Desktop
@@ -122,6 +130,6 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt update && \
 	apt-get install -y powershell
 
-ENTRYPOINT ["supervisord", "-c"]
+ENTRYPOINT ["supervisord", "-l", "/app/supervisord.log", "-c"]
 
 CMD ["/app/supervisord.conf"]
