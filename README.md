@@ -50,11 +50,12 @@
 | NGROK_TOKEN | Ngrok Token |
 
 ## **Installation :**
- * Heroku Users :
-   * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu) button.
-   * Set app name & variables.
+ * Railway Users :
+   * Click on [Deploy Now](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fvital987%2Fvubuntu&envs=VNC_TITLE%2CVNC_PASS%2CVNC_RESOLUTION%2CTZ&VNC_TITLEDesc=%F0%9F%92%BB+VNC+session+title%28strictly+w%2Fo+spaces%29&VNC_PASSDesc=%F0%9F%94%91+VNC+server+password&VNC_RESOLUTIONDesc=%F0%9F%96%A5%EF%B8%8F+VNC+server+resolution&TZDesc=%F0%9F%8C%8E+TimeZone&VNC_TITLEDefault=Vubuntu&VNC_PASSDefault=samplepass&VNC_RESOLUTIONDefault=1280x720&TZDefault=Asia%2FKolkata) button.
+   * Set the repo name & variables.
    * Deploy.
- * Non-Heroku Useers :
+   * [ ! ] The project takes a minute or two to load on Railway after the deployment, till that it will show 404 error, be patient.
+ * Manual Method :
    * Edit & Run Command :
      ```
      docker run --name vubuntu \
@@ -70,17 +71,5 @@
 ## **Warnings :**
   * [ ! ] $VNC_TITLE value should be without spaces.
   * [ ! ] $VNC_PASS value should be without spaces.
+  * [ ! ] The project takes a minute or two to load on Railway after the deployment, till that it will show 404 error, be patient.
   * [ ! ] The whole project runs as a root user in a docker container.
-  * [ ! ] 3rd Party Softwares dosen't work with DE on Heroku(Free plan) due to low memory.
-
-## **Desktop Environments :**
-* **MATE :**
-  * Comment line #69 from Dockerfile
-  * Uncomment line #71, #72, #73 from Dockerfile
-  * Delete file ***conf.d/4-fluxbox.conf***
-  * Copy the file ***extras/4-mate.conf*** to ***conf.d/***
-* **XFCE :**
-  * Comment line #69 from Dockerfile
-  * Uncomment line #75, #76 from Dockerfile
-  * Delete file ***conf.d/4-fluxbox.conf***
-  * Copy the file ***extras/4-xfce.conf*** to ***conf.d/***
