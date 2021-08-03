@@ -1,12 +1,14 @@
 # **Ubuntu Fluxbox with NoVNC**
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vubuntu)
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Inactively Maintained](https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-yellowgreen.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vubuntu)<br>
+
+### **[ ! ] Using VNC/Remote Desktops are strictly prohibited/banned on many free PaaS platforms.<br>[ ! ] Deploy/Use at your own risk & responsibility!**
+
 ## **Table of Contents :**
   * [**Packages**](#packages-)
   * [**Screenshots**](#screenshots-)
   * [**Environment Variables**](#environment-variables-)
   * [**Installation**](#installation-)
   * [**Warnings**](#warnings-)
-  * [**Desktop Environments**](#desktop-environments-)
 ## **Packages :** 
   * **Browsers :** 
     * [![Firefox](https://img.shields.io/static/v1?label=Firefox&message=%20&color=orange&logo=firefox-browser)]() [![Brave](https://img.shields.io/static/v1?label=Brave&message=%20&color=fa552a&logo=brave)]()
@@ -50,8 +52,8 @@
 | NGROK_TOKEN | Ngrok Token |
 
 ## **Installation :**
- * Railway Users :
-   * Click on [Deploy Now](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fvital987%2Fvubuntu&envs=VNC_TITLE%2CVNC_PASS%2CVNC_RESOLUTION%2CTZ&VNC_TITLEDesc=%F0%9F%92%BB+VNC+session+title%28strictly+w%2Fo+spaces%29&VNC_PASSDesc=%F0%9F%94%91+VNC+server+password&VNC_RESOLUTIONDesc=%F0%9F%96%A5%EF%B8%8F+VNC+server+resolution&TZDesc=%F0%9F%8C%8E+TimeZone&VNC_TITLEDefault=Vubuntu&VNC_PASSDefault=samplepass&VNC_RESOLUTIONDefault=1280x720&TZDefault=Asia%2FKolkata) button.
+ * Heroku Users :
+   * Click on [Deploy Now](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vubuntu) button.
    * Set the repo name & variables.
    * Deploy.
    * [ ! ] The project takes a minute or two to load on Railway after the deployment, till that it will show 404 error, be patient.
