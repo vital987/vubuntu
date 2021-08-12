@@ -53,7 +53,7 @@
 
 ## **Installation :**
  * Heroku Users :
-   * Click on [Deploy Now](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vubuntu) button.
+   * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/vubuntu) button.
    * Set the repo name & variables.
    * Deploy.
    * [ ! ] The project takes a minute or two to load on Railway after the deployment, till that it will show 404 error, be patient.
