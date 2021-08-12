@@ -1,7 +1,6 @@
-# **Ubuntu Fluxbox with NoVNC**
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)<br>
+# **Ubuntu Fluxbox with NoVNC, checkout [PureVNC](https://github.com/vital987/vubuntu/tree/purevnc)**(w/o noVNC)
 
-### **[ ! ] Using VNC/Remote Desktops are strictly prohibited/banned on many free PaaS platforms.<br>[ ! ] Deploy/Use at your own risk & responsibility!**
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)<br>
 
 ## **Table of Contents :**
   * [**Packages**](#packages-)
@@ -73,5 +72,6 @@
 ## **Warnings :**
   * [ ! ] $VNC_TITLE value should be without spaces.
   * [ ! ] $VNC_PASS value should be without spaces.
-  * [ ! ] The project takes a minute or two to load on Railway after the deployment, till that it will show 404 error, be patient.
   * [ ! ] The whole project runs as a root user in a docker container.
+  * [ ! ] Using VNC/Remote Desktops are strictly prohibited/banned on many free PaaS platforms.
+  * [ ! ] Deploy/Use at your own risk & responsibility!
