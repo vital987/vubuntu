@@ -1,6 +1,6 @@
-FROM ubuntu:20.04
+FROM vital987/supervisor:ubuntu20.04
 
-LABEL AboutImage "Ubuntu20.04_Fluxbox_NoVNC"
+LABEL AboutImage "Ubuntu20.04_Fluxbox_PureVNC"
 
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 
@@ -15,16 +15,19 @@ ENV DEBIAN_FRONTEND=noninteractive \
 	VNC_RESOLUTION="1280x720" \
 #Local Display Server Port
 	DISPLAY=:0 \
-#NoVNC Port
-	NOVNC_PORT=$PORT \
 #Locale
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
 	LC_ALL=C.UTF-8 \
-	TZ="Asia/Kolkata"
+	TZ="Asia/Kolkata" \
+#Ngrok Specific
+	NGROK_BINDTLS=1 \
+	NGROK_METHOD=tcp \
+	NGROK_PORT=5900
 
 COPY . /app
-
+COPY conf.d/*.conf /config/supervisor/
+COPY conf.d/*.py /config/
 RUN rm -rf /etc/apt/sources.list && \
 #All Official Focal Repos
 	bash -c 'echo -e "deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse\ndeb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse\ndeb http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse\ndeb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse\ndeb-src http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse\ndeb http://archive.canonical.com/ubuntu focal partner\ndeb-src http://archive.canonical.com/ubuntu focal partner" >/etc/apt/sources.list' && \
@@ -40,13 +43,14 @@ RUN rm -rf /etc/apt/sources.list && \
 	curl \
 	vim \
 	zip \
+	socat \
 	sudo \
 	net-tools \
 	iputils-ping \
 	build-essential \
-	#python3 \
-	#python3-pip \
-	#python-is-python3 \
+	python3 \
+	python3-pip \
+	python-is-python3 \
 	#perl \
 	#ruby \
 	#golang \
@@ -70,34 +74,21 @@ RUN rm -rf /etc/apt/sources.list && \
 	libreoffice \
 	pcmanfm \
 	terminator \
-	supervisor \
 	x11vnc \
 	xvfb \
 	gnupg \
 	dirmngr \
 	gdebi-core \
 	nginx \
-	novnc \
-	openvpn \
 	ffmpeg \
 	pluma \
 #Fluxbox
 	/app/fluxbox-mod.deb && \
-#Websockify
-	npm i websockify && \
-#MATE Desktop
-	#apt install -y \ 
-	#ubuntu-mate-core \
-	#ubuntu-mate-desktop && \
-#XFCE Desktop
-	#apt install -y \
-	#xubuntu-desktop && \
+#PyNgrok
+	pip3 install pyngrok && \
 #TimeZone
 	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 	echo $TZ > /etc/timezone && \
-#NoVNC
-	cp /usr/share/novnc/vnc.html /usr/share/novnc/index.html && \
-	openssl req -new -newkey rsa:4096 -days 36500 -nodes -x509 -subj "/C=IN/ST=Maharastra/L=Private/O=Dis/CN=www.google.com" -keyout /etc/ssl/novnc.key  -out /etc/ssl/novnc.cert && \
 #VS Code
 	wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg && \
 	install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/ && \
@@ -129,7 +120,3 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
 	apt update && \
 	apt-get install -y powershell
-
-ENTRYPOINT ["supervisord", "-l", "/app/supervisord.log", "-c"]
-
-CMD ["/app/supervisord.conf"]
