@@ -37,6 +37,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt-transport-https \
 	wget \
 	git \
+	htop \
 	curl \
 	vim \
 	zip \
