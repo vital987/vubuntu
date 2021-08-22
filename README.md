@@ -1,6 +1,6 @@
 # Ubuntu with NoVNC, checkout [PureVNC](https://github.com/vital987/vubuntu/tree/purevnc) (w/o noVNC)
 
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)<br>
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)](https://ubuntu.com) [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=Vital987&color=1e90ff)](https://github.com/vital987) [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)](https://github.com/vital987) [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)<br>
 
 ## **Table of Contents :**
   * [**Packages**](#packages-)
@@ -55,7 +55,6 @@
    * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/vubuntu) button.
    * Set the repo name & variables.
    * Deploy.
-   * [ ! ] The project takes a minute or two to load on Railway after the deployment, till that it will show 404 error, be patient.
  * Manual Method :
    * Edit & Run Command :
      ```
@@ -67,8 +66,7 @@
      -e PORT=9870 \
      -d -p 8080:9870 \
      vital987/vubuntu
-     ```
-[ * ] Add your private ngrok token to ```NGROK_TOKEN``` to get proper Ngrok functionality.  
+     ```  
 ## **Warnings :**
   * [ ! ] $VNC_TITLE value should be without spaces.
   * [ ! ] $VNC_PASS value should be without spaces.
