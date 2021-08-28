@@ -1,4 +1,4 @@
-# Ubuntu with NoVNC, checkout [PureVNC](https://github.com/vital987/vubuntu/tree/purevnc) (w/o noVNC)
+# Ubuntu with NoVNC/[PureVNC](https://github.com/vital987/vubuntu/tree/purevnc) (w/o noVNC)
 
 [![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)](https://ubuntu.com) [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=Vital987&color=1e90ff)](https://github.com/vital987) [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)](https://github.com/vital987) [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)<br>
 
@@ -24,7 +24,7 @@
 * **Utilities :**
     * [![File Manager](https://img.shields.io/static/v1?label=File%20Manager&message=%20&color=EFF700&logo=files&logoColor=EFF700)]() [![Calculator](https://img.shields.io/static/v1?label=Calculator&message=%20&color=017A79&logo=craft-cms&logoColor=017A79)]() [![System Monitor](https://img.shields.io/static/v1?label=System%20Monitor&message=%20&color=111324&logo=campaign-monitor&logoColor=111324)]() [![PeaZip](https://img.shields.io/static/v1?label=Ngrok&message=%20&color=1853DB&logo=ngrok&logoColor=1853DB)]() [![PeaZip](https://img.shields.io/static/v1?label=PeaZip&message=%20&color=6300F7&logo=git-lfs&logoColor=6300F7)]()
 * **Languages Installed :** 
-    * [![C](https://img.shields.io/static/v1?label=C&message=%20&logo=c)]() [![C++](https://img.shields.io/static/v1?label=C%2b%2b&message=%20&logo=c%2b%2b&logoColor=1e90ff&color=1e90ff)]() [![C Sharp](https://img.shields.io/static/v1?label=C%23&message=%20&logo=c-sharp&logoColor=green&color=green)]() [![Clojure](https://img.shields.io/static/v1?label=Clojure&message=%20&logo=clojure&logoColor=brightgreen&color=brightgreen)]() [![Go](https://img.shields.io/static/v1?label=Go&message=%20&logo=go&logoColor=1e90ff&color=1e90ff)]() [![Java](https://img.shields.io/static/v1?label=Java&message=%20&logo=java&logoColor=f89820&color=f89820)]() [![Lua](https://img.shields.io/static/v1?label=Lua&message=%20&color=blueviolet&logo=lua&logoColor=9638E7)]() [![R](https://img.shields.io/static/v1?label=R&message=%20&logo=r&logoColor=blue&color=blue)]()  [![Ruby](https://img.shields.io/static/v1?label=Ruby&message=%20&logo=ruby&logoColor=9b111e&color=9b111e)]() [![Perl](https://img.shields.io/static/v1?label=Perl&message=%20&logo=perl&logoColor=cc99ff&color=cc99ff)]() [![Python](https://img.shields.io/static/v1?label=Python&message=%20&logo=python&color=blue)]()
+    * [![C](https://img.shields.io/static/v1?label=C&message=%20&logo=c)]() [![C++](https://img.shields.io/static/v1?label=C%2b%2b&message=%20&logo=c%2b%2b&logoColor=1e90ff&color=1e90ff)]() [![C Sharp(optional)](https://img.shields.io/static/v1?label=*C%23&message=%20&logo=c-sharp&logoColor=green&color=green)]() [![Clojure(optional)](https://img.shields.io/static/v1?label=*Clojure&message=%20&logo=clojure&logoColor=brightgreen&color=brightgreen)]() [![Go](https://img.shields.io/static/v1?label=Go&message=%20&logo=go&logoColor=1e90ff&color=1e90ff)]() [![Java](https://img.shields.io/static/v1?label=Java&message=%20&logo=java&logoColor=f89820&color=f89820)]() [![Lua(optional)](https://img.shields.io/static/v1?label=*Lua&message=%20&color=blueviolet&logo=lua&logoColor=9638E7)]() [![R(optional)](https://img.shields.io/static/v1?label=*R&message=%20&logo=r&logoColor=blue&color=blue)]()  [![Ruby](https://img.shields.io/static/v1?label=Ruby&message=%20&logo=ruby&logoColor=9b111e&color=9b111e)]() [![Perl(optional)](https://img.shields.io/static/v1?label=*Perl&message=%20&logo=perl&logoColor=cc99ff&color=cc99ff)]() [![Python](https://img.shields.io/static/v1?label=Python&message=%20&logo=python&color=blue)]()
 
 ## **Screenshots :**
 <div>
@@ -48,29 +48,28 @@
 | VNC_RESOLUTION | VNC Server Resolution |
 | DISPLAY | Display Server Port |
 | PORT | NoVNC HTTP Port |
-| NGROK_TOKEN | Ngrok Token |
+| NGROK_AUTH_TOKEN | Ngrok Token |
 
 ## **Installation :**
  * Heroku Users :
    * Click on [Deploy Now](https://heroku.com/deploy?template=https://github.com/vubuntu) button.
-   * Set the repo name & variables.
+   * Set the app name & variables.
    * Deploy.
  * Manual Method :
    * Edit & Run Command :
      ```
      docker run --name vubuntu \
      -e VNC_PASS="samplepass" \
-     -e VNC_TITLE="Ubuntu_Desktop" \
+     -e VNC_TITLE="Vubuntu" \
      -e VNC_RESOLUTION="1280x720" \
      -e DISPLAY=:0 \
      -e PORT=9870 \
      -d -p 8080:9870 \
-     vital987/vubuntu
+     vital987/vubuntu:latest
      ```  
 ## **Warnings :**
-  * [ ! ] $VNC_TITLE value should be without spaces.
-  * [ ! ] $VNC_PASS value should be without spaces.
-  * [ ! ] The whole project runs as a root user in a docker container.
-  * [ ! ] Using VNC/Remote Desktops are strictly prohibited/banned on many free PaaS platforms.
-  * [ ! ] Deploy/Use at your own risk & responsibility!
+  * [ ! ] **VNC_TITLE & VNC_PASS values should be without spaces.**
+  * [ ! ] **The whole project runs as a root user in a docker container.**
+  * [ ! ] **Using VNC/Remote Desktops are strictly prohibited/banned on many free platforms.**
+  * [ ! ] **Deploy/Use at your own risk & responsibility!**
 

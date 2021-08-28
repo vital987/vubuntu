@@ -1,6 +1,6 @@
 FROM vital987/vubuntu:latest
 
-ENV DEBIAN_FRONTEND=noninteractive \
+ENV 	DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
 	VNC_PASS="samplepass" \
 #VNC Server Title(w/o spaces)
@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 #NoVNC Port
 	NOVNC_PORT=5900 \
 #PORT
-  PORT=80 \
+  	PORT=80 \
 #Locale
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
