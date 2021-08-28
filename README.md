@@ -1,4 +1,4 @@
-# Ubuntu with NoVNC/[PureVNC](https://github.com/vital987/vubuntu/tree/purevnc) (w/o noVNC)
+# Ubuntu with NoVNC/[PureVNC](https://github.com/vital987/vubuntu/tree/purevnc) (Direct VNC)
 
 [![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)](https://ubuntu.com) [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=Vital987&color=1e90ff)](https://github.com/vital987) [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)](https://github.com/vital987) [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu)<br>
 
