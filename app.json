@@ -1,14 +1,14 @@
 {
-    "name": "Vubuntu-PureVNC",
-    "description": "Fully fledged Ubuntu with pure VNC, refer readme for more info.",
+    "name": "Vubuntu",
+    "description": "Fully fledged Ubuntu NoVNC, refer readme for more info.",
     "repository": "https://github.com/vital987/vubuntu.git",
     "logo": "https://imgur.com/1qCGUwK.png",
-    "keywords": ["docker","ubuntu", "vscode", "purevnc", "pure", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "vnc", "vubuntu"],
+    "keywords": ["docker","ubuntu", "vscode", "novnc", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "vnc", "vubuntu"],
     "stack": "container",
     "env": {
       "VNC_TITLE" : {
         "description": "VNC Session Title, w/o spaces.",
-	      "value" : "Vubuntu-PureVNC",
+	      "value" : "Vubuntu",
         "required" : true
       } ,
       "VNC_PASS": {
@@ -19,11 +19,6 @@
         "description": "VNC Server Resolution in WxH, 720p is preferrable.",
 		"value" : "1280x720",
         "required" : true
-      },
-      "NGROK_AUTH_TOKEN" : {
-        "description": "Ngrok Auth-Token",
-		"value" : "",
-        "required" : true
-      }
+        }
     } 
   }
