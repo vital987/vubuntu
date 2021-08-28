@@ -35,8 +35,8 @@
  </details>
  <details>
   <summary>Smartphone/Tablet</summary>
+  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/screenshots/phone_ss1.png" align="center" width=900 height=500><br><br>
   <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/screenshots/phone_ss2.png" align="center" width=900 height=500><br><br>
-  <img src="https://raw.githubusercontent.com/vital987/vubuntu/master/assets/screenshots/phone_ss3.png" align="center" width=900 height=500><br><br>
  </details>
 </div>
   
