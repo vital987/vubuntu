@@ -1,7 +1,5 @@
-# **Ubuntu Fluxbox with PureVNC**
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu-purevnc.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](http://heroku.com/deploy?template=https://github.com/vital987/vubuntu/tree/purevnc)<br>
-
-## **[ * ] Refer Vubuntu's main Readme for more info.**
+# **Ubuntu Fluxbox with Direct VNC**
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![Heroku](https://www.herokucdn.com/deploy/button.svg)](http://heroku.com/deploy?template=https://github.com/vital987/vubuntu/tree/purevnc)<br>
 
 ## **Introduction:**
 * **Vubuntu-PureVNC is a modified version of Vubuntu where one can connect to the server directly via VNC url without any web client like NoVNC.**
@@ -26,3 +24,4 @@
     ```
   * Ngrok Web-UI will appear on 0.0.0.0:8080, copy the url excluding *tcp://* and paste in the VNC client of your choice.
   * Ngrok VNC URL will be also appear at the stdout of the console.
+## **Refer [this](https://github.com/vital987/vubuntu/blob/master/README.md) readme for more info.**
