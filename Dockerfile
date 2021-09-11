@@ -12,6 +12,8 @@ ENV	VNC_PASS="samplepass" \
 	VNC_TITLE="Vubuntu_Desktop" \
 #VNC Resolution(720p is preferable)
 	VNC_RESOLUTION="1280x720" \
+#VNC Shared Mode (0=off, 1=on)
+	VNC_SHARED=0 \
 #Local Display Server Port
 	DISPLAY=:0 \
 #NoVNC Port

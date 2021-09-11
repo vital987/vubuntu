@@ -46,6 +46,7 @@
 |:-:|:-:|
 | VNC_TITLE | VNC Session Title |
 | VNC_RESOLUTION | VNC Server Resolution |
+| VNC_SHARED | VNC Shared Mode |
 | DISPLAY | Display Server Port |
 | PORT | NoVNC HTTP Port |
 | NGROK_AUTH_TOKEN | Ngrok Token |
