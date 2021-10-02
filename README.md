@@ -50,6 +50,8 @@
 | DISPLAY | Display Server Port |
 | PORT | NoVNC HTTP Port |
 | NGROK_AUTH_TOKEN | Ngrok Token |
+| NO_SLEEP | Prevent Heroku app from sleeping, disabled by default |
+| APP_NAME | Name of Heroku app |
 
 ## **Installation :**
  * Heroku Users :

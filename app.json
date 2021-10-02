@@ -19,6 +19,16 @@
         "description": "VNC Server Resolution in WxH, 720p is preferrable.",
 		"value" : "1280x720",
         "required" : true
+        },
+      "NO_SLEEP" : {
+        "description": "Prevent app from sleeping, 1=on, 0=off",
+                "value" : "0",
+        "required" : true
+        },
+      "APP_NAME" : {
+        "description": "Name of the app, same as mentioned above.",
+                "value" : "",
+        "required" : true
         }
     } 
   }
