@@ -24,6 +24,16 @@
         "description": "Ngrok Auth-Token",
 		"value" : "",
         "required" : true
+      },
+      "NO_SLEEP" : {
+        "description": "Prevent app from sleeping, 1=on, 0=off",
+                "value" : "0",
+        "required" : true
+      },
+      "APP_NAME" : {
+        "description": "Name of the app, same as mentioned above.",
+                "value" : "",
+        "required" : true
       }
     } 
   }
