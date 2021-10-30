@@ -24,7 +24,8 @@ ENV	VNC_PASS="samplepass" \
 #Ngrok Specific
 	NGROK_BINDTLS=1 \
 	NGROK_METHOD=tcp \
-	NGROK_PORT=5900
+	NGROK_PORT=5900 \
+	NGROK_REGION="in"
 
 SHELL ["/bin/bash", "-c"]
 
