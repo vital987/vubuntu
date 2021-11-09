@@ -33,41 +33,20 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && \
     apt-get --no-install-recommends install -y \
 #Basic Packages
-    tzdata software-properties-common apt-transport-https wget zip unzip htop git curl vim nano zip sudo net-tools x11-utils eterm iputils-ping build-essential xvfb x11vnc supervisor \
+    tzdata software-properties-common apt-transport-https wget zip unzip htop git curl vim nano sudo net-tools x11-utils eterm iputils-ping build-essential xvfb x11vnc websockify supervisor \
 #GUI Utilities
-    gnome-terminal gnome-calculator gnome-system-monitor pcmanfm terminator firefox \
+    pcmanfm terminator \
 #Python
     python3 python3-pip python-is-python3 \
-#Java
-    default-jre default-jdk \
 #Text Editors
-    vim-gtk3 mousepad pluma \
-#NodeJS
-    nodejs npm \
-#Go
-    golang \
-#Other Languages
-    #perl \
-    #ruby \
-    #lua5.3 \
-    #scala \
-    #mono-complete \
-    #r-base \
-    #clojure \
-    #php \
-#Extras
-    libreoffice \
+    pluma \
     gnupg \
     dirmngr \
-    gdebi-core \
-    nginx \
-    ffmpeg && \
+    gdebi-core && \
 #Fluxbox & noVNC
-    apt-get install --no-install-recommends -y /app/.vubuntu/assets/packages/fluxbox.deb /app/.vubuntu/assets/packages/novnc.deb && \
+    apt-get install --no-install-recommends -y /app/.vubuntu/assets/packages/fluxbox-minimal.deb /app/.vubuntu/assets/packages/novnc.deb && \
     cp /usr/share/novnc/vnc.html /usr/share/novnc/index.html && \
     openssl req -new -newkey rsa:4096 -days 36500 -nodes -x509 -subj "/C=IN/ST=Maharastra/L=Private/O=Dis/CN=www.google.com" -keyout /etc/ssl/novnc.key  -out /etc/ssl/novnc.cert && \
-#Websockify
-    npm i websockify && \
 #MATE Desktop (remove "/app/.vubuntu/assets/packages/fluxbox.deb" from line 66 before uncommenting)
     #apt-get install -y \
     #ubuntu-mate-core \
@@ -87,20 +66,13 @@ RUN apt-get update && \
     echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|tee /etc/apt/sources.list.d/brave-browser-release.list && \
 #PeaZip - source
     wget https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip_8.2.0.LINUX.GTK2-1_amd64.deb -P /tmp && \
-#Sublime - source
-    curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - && \
-    add-apt-repository "deb https://download.sublimetext.com/ apt/stable/" && \
 #Telegram - source
     wget https://updates.tdesktop.com/tlinux/tsetup.3.2.2.tar.xz -P /tmp && \
     tar -xvf /tmp/tsetup.3.2.2.tar.xz -C /tmp && \
     mv /tmp/Telegram/Telegram /usr/bin/telegram && \
-#PowerShell - source
-    wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -P /tmp && \
 #Installation
     apt-get update && \
-    apt-get install --no-install-recommends code brave-browser /tmp/peazip_8.2.0.LINUX.GTK2-1_amd64.deb sublime-text /tmp/packages-microsoft-prod.deb -y && \
-    apt-get update && \
-    apt-get install --no-install-recommends -y powershell && \
+    apt-get install --no-install-recommends code brave-browser /tmp/peazip_8.2.0.LINUX.GTK2-1_amd64.deb -y && \
 #Ngrok
     wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -P /tmp && \
     unzip /tmp/ngrok-stable-linux-amd64.zip -d /usr/bin && \

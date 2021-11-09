@@ -1,6 +1,6 @@
 {
-    "name": "Vubuntu",
-    "description": "Fully fledged Ubuntu NoVNC, refer readme for more info.",
+    "name": "Vubuntu minimal",
+    "description": "Ubuntu - NoVNC, refer readme for more info.",
     "repository": "https://github.com/vital987/vubuntu.git",
     "logo": "https://raw.githubusercontent.com/vital987/vubuntu/master/assets/icons/64x64.png",
     "keywords": ["docker","ubuntu", "vscode", "novnc", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "vnc", "vubuntu"],
@@ -30,5 +30,5 @@
                 "value" : "",
         "required" : true
         }
-    } 
+    }
   }
