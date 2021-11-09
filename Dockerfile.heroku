@@ -1,4 +1,4 @@
-FROM vital987/vubuntu:heroku
+FROM vital987/vubuntu:minimal
 
 ENV     DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
