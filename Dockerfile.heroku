@@ -1,6 +1,6 @@
-FROM vital987/vubuntu:latest
+FROM vital987/vubuntu:heroku
 
-ENV 	DEBIAN_FRONTEND=noninteractive \
+ENV     DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
 	VNC_PASS="samplepass" \
 #VNC Server Title(w/o spaces)
@@ -10,7 +10,9 @@ ENV 	DEBIAN_FRONTEND=noninteractive \
 #NoVNC Port
 	NOVNC_PORT=5900 \
 #PORT
-  	PORT=80 \
+        PORT=80 \
+#Disable Shared Memory for Brave
+	BRAVE_USE_SHM=0 \
 #Locale
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
