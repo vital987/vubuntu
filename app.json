@@ -1,18 +1,23 @@
 {
     "name": "Vubuntu-PureVNC",
-    "description": "Fully fledged Ubuntu with pure VNC, refer readme for more info.",
+    "description": "Fully fledged Ubuntu with direct VNC, refer readme for more info.",
     "repository": "https://github.com/vital987/vubuntu.git",
-    "logo": "https://imgur.com/1qCGUwK.png",
-    "keywords": ["docker","ubuntu", "vscode", "purevnc", "pure", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "vnc", "vubuntu"],
+    "logo": "https://raw.githubusercontent.com/vital987/vubuntu/master/assets/icons/64x64.png",
+    "keywords": ["docker","ubuntu", "vscode", "purevnc", "pure", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "direct-vnc", "vnc", "vubuntu"],
     "stack": "container",
     "env": {
+      "APP_NAME" : {
+        "description": "Name of the app, same as mentioned above.",
+                "value" : "",
+        "required" : true
+      },
       "VNC_TITLE" : {
-        "description": "VNC Session Title, w/o spaces.",
+        "description": "VNC Session Title, without spaces.",
 	      "value" : "Vubuntu-PureVNC",
         "required" : true
-      } ,
+      },
       "VNC_PASS": {
-        "description": "VNC server password w/o spaces.",
+        "description": "VNC server password without spaces.",
         "required" : true
       },
       "VNC_RESOLUTION" : {
@@ -29,11 +34,6 @@
         "description": "Prevent app from sleeping, 1=on, 0=off",
                 "value" : "0",
         "required" : true
-      },
-      "APP_NAME" : {
-        "description": "Name of the app, same as mentioned above.",
-                "value" : "",
-        "required" : true
       }
-    } 
+    }
   }
