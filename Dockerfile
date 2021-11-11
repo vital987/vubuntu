@@ -1,4 +1,4 @@
-FROM vital987/vubuntu:latest
+FROM vital987/vubuntu:purevnc-minimal
 
 LABEL Maintainer "Apoorv Vyavahare <apoorvvyavahare@pm.me>"
 
@@ -29,8 +29,7 @@ SHELL ["/bin/bash", "-c"]
 
 RUN	apt-get update && \
 	apt-get install --no-install-recommends -y socat && \
-	apt-get purge -y novnc && \
-	npm uninstall --global websockify && \
+	apt-get purge -y websockify novnc && \
 	rm -rf /app/.vubuntu/assets/configs/* && \
 	rm -rf /var/lib/apt/lists/* && \
 	apt-get clean && \

@@ -1,1 +1,1 @@
-FROM vital987/vubuntu:purevnc
+FROM vital987/vubuntu:purevnc-minimal

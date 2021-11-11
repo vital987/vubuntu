@@ -1,6 +1,6 @@
 {
-    "name": "Vubuntu-PureVNC",
-    "description": "Fully fledged Ubuntu with direct VNC, refer readme for more info.",
+    "name": "Vubuntu-PureVNC-minimal",
+    "description": "Ubuntu with direct VNC, refer readme for more info.",
     "repository": "https://github.com/vital987/vubuntu.git",
     "logo": "https://raw.githubusercontent.com/vital987/vubuntu/master/assets/icons/64x64.png",
     "keywords": ["docker","ubuntu", "vscode", "purevnc", "pure", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "direct-vnc", "vnc", "vubuntu"],
