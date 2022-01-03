@@ -1,18 +1,13 @@
 # VNC + Ubuntu = Vubuntu ¯\\_\(ツ\)\_\/¯
 
-[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>[![PureVNC](https://raw.githubusercontent.com/vital987/vubuntu/master/assets/repo_files/button-purevnc.png)](https://heroku.com/deploy?template=https://github.com/vital987/vubuntu/tree/purevnc)<br>
+[![Ubuntu Version](https://img.shields.io/static/v1?label=Ubuntu&message=20.04&color=E95420&logo=ubuntu)]() [![Maintainer](https://img.shields.io/static/v1?label=Maintainer&message=apoorvvyavahare@pm.me&color=1e90ff)]() [![Maintainance](https://img.shields.io/badge/Maintenance%20Level-Active-success.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/vital987/vubuntu.svg)](https://hub.docker.com/r/vital987/vubuntu) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()<br>
 
 ## **Introduction:**
 * **Vubuntu-PureVNC is a modified version of Vubuntu where one can connect to the server directly via VNC url without any web client like NoVNC.**
 * **Vubuntu-PureVNC was created for the users who want more flexibility & comfort.**
 ## **Usage:**
 * **Heroku-users:** 
-  * Press on *Deploy Now* button above, get your ngrok token by registering on [Ngrok](https://ngrok.com).
-  * Give all the information required on the deployment page, click deploy.
-  * After deployment, wait for a minute.
-  * Click on the *Open App* on the top right of Heroku app dashboard.
-  * You'll get ngrok dashboard with a TCP URL, copy the url excluding *tcp://* and paste in the VNC client of your choice.
-  * Also you will get Ngrok URL in the logs of Heroku.
+  * **Heroku prohibited this project from deploying due to TOS issues.**
 * **Non-Heroku Users:** 
   * Docker should be installed on the system to proceed.
   * Run the below command:
